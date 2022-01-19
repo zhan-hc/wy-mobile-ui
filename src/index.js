@@ -1,7 +1,11 @@
 import WyDialog from './packages/dialog/index.js';
+import WyLoading from './packages/loading/index.js';
+import WyToast from './packages/toast/index.js';
 
 const components = [
-  WyDialog
+  WyToast,
+  WyDialog,
+  WyLoading,
 ]
 
 const install = function(Vue, opts = {}) {
@@ -17,5 +21,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  WyDialog
+  WyToast,
+  WyDialog,
+  WyLoading
 }

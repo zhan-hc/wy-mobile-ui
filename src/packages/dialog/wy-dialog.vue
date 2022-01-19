@@ -22,7 +22,7 @@ export default {
     message: {
       type: String,
       default: () => {
-        return "我是对话框！！！";
+        return "我是对话框！";
       }
     }
   },
@@ -30,9 +30,6 @@ export default {
     return {};
   },
   methods: {
-    aa() {
-      console.log(this.$slots,'slot')
-    },
     handleCancel() {
       this.$emit('input',false)
     }
